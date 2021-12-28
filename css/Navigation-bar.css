@@ -1,0 +1,201 @@
+#top {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#logo {
+  font-weight: bolder;
+  width: 50%;
+  height: 70px;
+  position: relative;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-right: 10px solid white;
+}
+
+#logo img {
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  margin-left: 2em;
+}
+
+#logo span {
+
+  font-family: 'Playball', cursive;
+  margin-left: 50px;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.navigation {
+  width: 50%;
+  height: 70px;
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 10px solid white;
+}
+
+.navigation ul {
+  display: flex;
+  width: 350px;
+}
+
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 3;
+}
+
+.navigation ul li a {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  font-size: 1.5em;
+  line-height: 75px;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 3;
+  color: black;
+}
+
+.navigation ul li a .icon img {
+  width: 1.05em;
+  height: 1.05em;
+}
+
+.navigation ul li.active a .icon {
+  transform: translateY(35px);
+  z-index: 3;
+  color: black;
+}
+
+.navigation ul li a .nav-text {
+  position: absolute;
+  font-family: 'Playfair Display', serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+  color: black;
+}
+
+.navigation ul li.active a .nav-text {
+  opacity: 1;
+  transform: translateY(15px);
+  color: black;
+}
+
+.indicator {
+  position: absolute;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  border: 6px solid var(--clr);
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.indicator::before {
+  z-index: 2;
+  content: " ";
+  position: absolute;
+  top: 16%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-bottom-right-radius: 20px;
+  box-shadow: 2px 5px 0px 0px var(--clr);
+}
+
+.indicator::after {
+  z-index: 2;
+  content: " ";
+  position: absolute;
+  top: 16%;
+  right: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-bottom-left-radius: 20px;
+  box-shadow: -2px 5px 0 0 var(--clr);
+}
+
+.navigation ul li:nth-child(1).active~.indicator {
+  transform: translateX(calc(70px * 0));
+}
+
+.navigation ul li:nth-child(2).active~.indicator {
+  transform: translateX(calc(70px * 1));
+}
+
+.navigation ul li:nth-child(3).active~.indicator {
+  transform: translateX(calc(70px * 2));
+}
+
+.navigation ul li:nth-child(4).active~.indicator {
+  transform: translateX(calc(70px * 3));
+}
+
+/* media Quaries ----------------------------------------------- */
+
+@media (max-width:350px) and (min-width: 261px){
+  #top {
+    flex-direction: column;
+  }
+
+  .navigation {
+    width: 100vw;
+  }
+
+  #logo {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navigation ul li a {
+    width: 110%;
+  }
+  .indicator {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width:780px) and (min-width:351px) {
+  #top {
+    flex-direction: column;
+  }
+
+  .navigation {
+    width: 100vw;
+  }
+
+  #logo {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+}

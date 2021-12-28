@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/svg+xml" href= "icons/android-chrome-512x512.png" />
+  
+  <!-- Music Player-------------------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Link a css ----–----------- -->
+  <link rel="stylesheet" href= "css/Style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href= "css/Navigation-bar.css" type="text/css" media="all">
+  <link rel="stylesheet" href= "css/Music-Player.css" type="text/css" media="all">
+  <link rel="stylesheet" href= "css/footer.css" type="text/css" media="all">
+
+  <title> Project 1</title>
+</head>
+
+<body>
+  <div id="top">
+    <div id="logo">
+      <span>Project 1</span>
+    </div>
+    <!-- Navigation bar--------------------------------------------------------- -->
+    <div class="navigation">
+      <ul>
+        <li class="list ">
+          <a href= "Index.html">
+            <span class="icon">
+              <img src= "icons/icons8-home-99999999.png">
+            </span>
+            <span class="nav-text">Home</span>
+          </a>
+        </li>
+        <li class="list active">
+          <a href= "song.html">
+            <span class="icon">
+              <img src= "icons/icons8-music-player-100.png">
+            </span>
+            <span class="nav-text">Song</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href= "content.html">
+            <span class="icon">
+              <img src= "icons/icons8-contact-us-100.png">
+            </span>
+            <span class="nav-text">Contact</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href= "Log-in.html">
+            <span class="icon">
+              <img src= "icons/icons8-log-in-100.png">
+            </span>
+            <span class="nav-text">Log in</span>
+          </a>
+        </li>
+        <div class="indicator">
+          <span></span>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <!-- Music Player --------------------- -->
+  <main>
+<div id="bg-player">
+    <div class="main">
+      <!-- top section -->
+      <div class="top_section">
+        <h5>Music Player&nbsp;&nbsp;<i class="fa fa-headphones" aria-hidden="true"></i></h5>
+      </div>
+
+
+      <div class="tracks">
+
+        <!-- list of song will add here from 'song_list.js' file -->
+
+        <!-- small music player -->
+        <div class="small_music_player">
+          <div class="s_player_img">
+            <div class="playing_img">
+              <img src="images/1.jpg" alt="">
+            </div>
+
+            <!-- wave animation part -->
+            <div class="wave_animation">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </div>
+          </div>
+
+          <div class="song_detail">
+            <p id="song_name">Woh Badtameez</p>
+            <p id="artist_name">Taran Saini</p>
+          </div>
+          <i class="fa fa-chevron-up" aria-hidden="true" id="up_player"></i>
+        </div>
+
+
+        <!--  popup music player part -->
+        <div class="popup_music_player">
+          <div class="top">
+            <p>Music Player</p>
+            <i class="fa fa-chevron-down" aria-hidden="true" id="down_player"></i>
+          </div>
+
+          <div class="song_img">
+            <img src="images/1.jpg" alt="">
+          </div>
+
+          <div class="song_description">
+            <h3 id="current_track_name">Woh Badtameez</h3>
+            <p id="current_singer_name">Taran Saini</p>
+          </div>
+
+          <div class="controlls">
+            <div class="progress_part">
+              <input type="range" min="0" max="100" value="0" id="slider" onchange="change_duration()">
+              <div class="durations">
+                <p id="current_duration">0:00</p>
+                <p id="total_duration">0:00</p>
+              </div>
+
+            </div>
+
+            <!-- controlls btn's -->
+            <div class="controlls_btns">
+              <button id="backward_btn"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+              <button id="play_pause_btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <button id="forward_btn"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer --------------------------------------------------- -->
+  <footer>
+    <div class="row">
+      <div class="col">
+        <h2 class="footer-logo" >Project 1</h2>
+        <p id="para">
+          MUSIC IS A PIECE OF ART THAT GOES IN THE EARS STRIGHT TO THE HEART.
+        </p>
+      </div>
+      <div class="col">
+        <h3>Content us <div class="underline"><span></span></div>
+        </h3>
+        <p>vpo jatwar Ambala</p>
+        <p>Ambala city 134201</p>
+        <p class="email-id">example@gmail.com</p>
+        <h3>+91-0123456789</h3>
+      </div>
+      <div class="col">
+        <h3>COLORIB <div class="underline">
+            <span></span>
+          </div>
+        </h3>
+          <p id="copyright">
+            &copy; 2021-2030
+          </p>
+      </div>
+      <div class="col">
+        <h3>Newsletter <div class="underline">
+            <span></span>
+          </div>
+        </h3>
+        <form id="footer-form" action="#">
+          <ion-icon name="mail"></ion-icon>
+          <input type="email" placeholder="Enter Your Email id" required>
+          <button type="submit" class="footer-btn">
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+        </form>
+        <div class="social-icons">
+          <i class="fa fa-apple"></i>
+          <i class="fa fa-windows"></i>
+          <i class="fa fa-linux"></i>
+          <i class="fa fa-android"></i>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <p class="copyright">
+      Project 1 &copy; All Rights Reserved
+    </p>
+  </footer>
+
+  <!-- fontawesome logo ----–----------- -->
+  <script src="https://kit.fontawesome.com/6a20098ea0.js" crossorigin="anonymous"></script>
+
+  <!--  Link a js --------------------- -->
+  <script src= "js/song_list.js"></script>
+  <script src="js/Music-Player.js"></script>
+  <script src= "js/Navigation-bar.js"></script>
+
+    <!-- ionicon ----------------------- -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+
+</html>

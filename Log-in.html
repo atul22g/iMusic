@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/svg+xml" href= "icons/android-chrome-512x512.png" />
+
+  <!-- Link a css ----–----------- -->
+  <link rel="stylesheet" href= "css/Style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href= "css/Navigation-bar.css" type="text/css" media="all">
+  <link rel="stylesheet" href= "css/Log-in.css" type="text/css" media="all">
+  <link rel="stylesheet" href= "css/footer.css" type="text/css" media="all">
+
+  <title> Project 1</title>
+</head>
+
+<body>
+  <!-- Navigation bar--------------------- -->
+  <header>
+    <div id="top">
+      <div id="logo">
+        <span>Project 1</span>
+      </div>
+
+      <div class="navigation">
+        <ul>
+          <li class="list">
+            <a href= "Index.html">
+              <span class="icon">
+                <img src= "icons/icons8-home-99999999.png">
+              </span>
+              <span class="nav-text">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href= "song.html">
+              <span class="icon">
+                <img src= "icons/icons8-music-player-100.png">
+              </span>
+              <span class="nav-text">Song</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href= "content.html">
+              <span class="icon">
+                <img src="icons/icons8-contact-us-100.png">
+              </span>
+              <span class="nav-text">Contact</span>
+            </a>
+          </li>
+          <li class="list active">
+            <a href= "Log-in.html">
+              <span class="icon">
+                <img src= "icons/icons8-log-in-100.png">
+              </span>
+              <span class="nav-text">Log in</span>
+            </a>
+          </li>
+          <div class="indicator"><span></span></div>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- End navigation bar --------------- -->
+  <main>
+    <div id="bg-login">
+      <h2 class="login-logo" >Log In</h2>
+      <form id="login-form" action="#">
+        <i class="fa fa-user login-icon"></i>
+        <input class="login" type="text" placeholder="Username" required>
+        <i class="fa fa-key login-icon"></i>
+        <input class="login" type="Password" placeholder="Enter Your Password" required>
+        <input class="login-btn" type="submit" value="Get Started">
+      </form>
+      <div class="login-bottom">
+        <div> <a class="bottom-line" href= "create_account.html">Create Account</a></div>
+        <a class="bottom-line" href= "forget_Password.html">Forget Password</a>
+      </div>
+    </div>
+  </main>
+  <!-- footer -------------------------- -->
+  <footer>
+    <div class="row">
+      <div class="col">
+        <h2 class="footer-logo" >Project 1</h2>
+        <p id="para">
+          MUSIC IS A PIECE OF ART THAT GOES IN THE EARS STRIGHT TO THE HEART.
+        </p>
+      </div>
+      <div class="col">
+        <h3>Content us <div class="underline"><span></span></div>
+        </h3>
+        <p>vpo jatwar Ambala</p>
+        <p>Ambala city 134201</p>
+        <p class="email-id">example@gmail.com</p>
+        <h4>+91-0123456789</h4>
+      </div>
+      <div class="col">
+        <h3>COLORIB <div class="underline"><span></span></div>
+        </h3>
+          <p id="copyright">
+            &copy; 2021-2030
+          </p>
+      </div>
+      <div class="col">
+        <h3>Newsletter <div class="underline"><span></span></div>
+        </h3>
+        <form id="footer-form" action="#">
+          <ion-icon name="mail"></ion-icon>
+          <input type="email" placeholder="Enter Your Email id" required>
+          <button type="submit" class="footer-btn">
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+        </form>
+        <div class="social-icons">
+          <i class="fa fa-apple"></i>
+          <i class="fa fa-windows"></i>
+          <i class="fa fa-linux"></i>
+          <i class="fa fa-android"></i>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">
+      Project 1 &copy; All Rights Reserved
+    </p>
+  </footer>
+
+
+  <!-- fontawesome logo ----–----------- -->
+  <script src="https://kit.fontawesome.com/6a20098ea0.js" crossorigin="anonymous"></script>
+
+  <!--  Link a js --------------------- -->
+  <script src= "js/Navigation-bar.js"></script>
+
+    <!-- ionicon ----------------------- -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+
+</html>
