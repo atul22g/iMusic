@@ -19,7 +19,6 @@
 }
 
 #name_container, #name_container2 {
-  /* border: 2px solid red; */
   width: 10%;
   display: flex;
   flex-direction: row;
@@ -43,7 +42,6 @@
   outline: none;
   padding-left: auto;
   text-align: center;
-  /*  border: 2px solid red;*/
 }
 
 .Name3 {
@@ -60,13 +58,11 @@
   background: transparent;
   font-size: 1pc;
   font-weight: 300;
-  border-bottom: 3px solid black;
-  border-right: 3px solid black;
-  border-left: 3px solid black;
+  border: 3px solid black;
+  border-top: none;
   outline: none;
   padding-left: auto;
   text-align: center;
-  /*  border: 2px solid red;*/
 }
 
 #create_account_container {
@@ -82,7 +78,6 @@
 }
 
 #checkbox {
-  /* bottom: 1em; */
   position: relative;
   width: 4em;
 }
@@ -122,12 +117,10 @@
 @media screen and (max-width:450px) {
   #Checkbox_container {
     text-align: center;
-    /* justify-content: center; */
     padding: 1em;
   }
 
   #checkbox {
-    /* bottom: 1em; */
     position: relative;
     width: 4em;
   }

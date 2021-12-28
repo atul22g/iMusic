@@ -13,7 +13,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* border: none; */
 }
 
 .login-logo {
@@ -87,7 +86,6 @@
 .login-bottom {
   display: flex;
   margin-bottom: 5em;
-  /* border: 2px solid red; */
 }
 
 .bottom-line {

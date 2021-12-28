@@ -106,7 +106,6 @@ form input {
     background: #fff;
     margin: 5px;
     cursor: pointer;
-    /* display: flex; */
 }
 
 hr {
@@ -179,7 +178,6 @@ hr {
 
 #para{
     width: 15em;
-    /* border: 2px solid rgb(84, 252, 17); */
 }
 
 #copyright{

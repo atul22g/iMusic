@@ -80,7 +80,6 @@
   align-items: center;
   margin: 1em 1.5em;
   width: 250px;
-  /* height: 250px; */
   margin-top: 2em;
   border-radius: 10px;
   position: relative;
@@ -95,7 +94,6 @@
   font-size: 20px;
   font-style: italic;
   font-weight: bolder;
-  /* border: 2px solid red;  */
 }
 
 .box_button {
@@ -111,7 +109,6 @@
   font-weight: bolder;
   color: black;
   text-decoration: none;
-  /* border: 2px solid red; */
 }
 
 .box_button:hover {

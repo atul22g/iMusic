@@ -62,6 +62,3 @@ for (let i = 0; i < All_song.length; i++) {
 
   tracks.insertAdjacentHTML("beforeend", Html);
 };
-
-
-/*please follow all the rules so that you do not face any problem*/
