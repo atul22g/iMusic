@@ -2,17 +2,17 @@
 <html>
 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8 ">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=divice-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/svg+xml" href="icons/android-chrome-512x512.png" />
+  <link rel="icon" type="image/svg+xml" href= "{{ url_for('static', filename='icons/android-chrome-512x512.png') }}" />
 
   <!-- Link a css ----–----------- -->
-  <link rel="stylesheet" href="css/Style.css" type="text/css" media="all ">
-  <link rel="stylesheet" href="css/Navigation-bar.css" type="text/css" media="all">
-  <link rel="stylesheet" href="css/Content.css" type="text/css" media="all">
-  <link rel="stylesheet" href="css/footer.css" type="text/css" media="all">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Navigation-bar.css') }}" type="text/css" media="all">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Home.css') }}" type="text/css" media="all">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}" type="text/css" media="all">
 
   <title> Project 1</title>
 </head>
@@ -25,34 +25,34 @@
     <!-- Navigation bar--------------------------------------------------------- -->
     <div class="navigation">
       <ul>
-        <li class="list ">
-          <a href="index.html">
+        <li class="list active">
+          <a href= "/">
             <span class="icon">
-              <img src="icons/icons8-home-99999999.png">
+              <img src= "{{ url_for('static', filename='icons/icons8-home-99999999.png') }}">
             </span>
             <span class="nav-text">Home</span>
           </a>
         </li>
         <li class="list">
-          <a href="song.html">
+          <a href= "/song">
             <span class="icon">
-              <img src="icons/icons8-music-player-100.png">
+              <img src= "{{ url_for('static', filename='icons/icons8-music-player-100.png') }}">
             </span>
             <span class="nav-text">Song</span>
           </a>
         </li>
-        <li class="list active">
-          <a href="content.html">
+        <li class="list">
+          <a href= "/content">
             <span class="icon">
-              <img src="icons/icons8-contact-us-100.png">
+              <img src= "{{ url_for('static', filename='icons/icons8-contact-us-100.png') }}">
             </span>
             <span class="nav-text">Contact</span>
           </a>
         </li>
         <li class="list">
-          <a href="Log-in.html">
+          <a href= "/log-in">
             <span class="icon">
-              <img src="icons/icons8-log-in-100.png">
+              <img src= "{{ url_for('static', filename='icons/icons8-log-in-100.png') }}">
             </span>
             <span class="nav-text">Log in</span>
           </a>
@@ -65,41 +65,49 @@
   </div>
   <!-- content --------------------- -->
   <main>
-    <div id="bg-login">
-      <h2 id="c_a_heading">Content Me</h2>
-      <form id="create_account_container" action="#">
-        <div id="name_container">
-          <input class="Name" type="text" placeholder="Enter Your Name" required>
-          <input class="Name" type="text" placeholder="Enter Your Last Name" required>
+
+    <div id="top-div">
+      <img id="profile" src= "{{ url_for('static', filename='icons/android-chrome-512x512.png') }}">
+      <strong id="profile-line"><span class="type"></span></strong>
+      <p id="occupation">
+        Music is like a dream. One that I cannot hear.
+      </p>
+    </div>
+
+    <div id="bottom-div">
+      <div class="box_container">
+        <div class="box">
+          <img src= "{{ url_for('static', filename='images/background/box1.jpeg') }}" class="box_img">
+          <h5 class="box_heading">Your Faviourite Song</h5>
+          <p class="box_heading">Behind every Faviourite Song There is an Untold Story ...</p>
+          <a class="box_button" href= "song.html">Enjoy The Song</a>
         </div>
-        <div id="name_container">
-          <input class="Name" type="text" placeholder="Enter Your Country" required>
-          <input class="Name" type="text" placeholder="Enter Your city" required>
+
+        <div class="box">
+          <img src="{{ url_for('static', filename='images/background/box2.jpg') }}" class="box_img">
+          <h5 class="box_heading">Content Me</h5>
+          <p class="box_heading">Everything happens For me, not me. Bynron Katie ...</p>
+          <a class="box_button" href= "content.html">Content Me</a>
         </div>
-        <div id="name_container2">
-          <select name="Phone" class="Name2">
-            <option value="+91">+91</option>
-            <option value="+1">+1</option>
-            <option value="+353">+353</option>
-            <option value="+51">+51</option>
-            <option value="+43">+43</option>
-            <option value="+43">+43</option>
-            <option value="+42">+42</option>
-          </select>
-          <input class="Name2" type="tel" minlength="10" maxlength="10" placeholder="Enter Your Phone No" required>
+
+        <div class="box">
+          <img src="{{ url_for('static', filename='images/background/box3.jpg') }} " class="box_img">
+          <h5 class="box_heading">Log In</h5>
+          <p class="box_heading">Jab tak ho Matlab khaas Tab Tak dety hain Log sath ...</p>
+          <a class="box_button" href= "Log-in.html">Log In</a>
         </div>
-        <input class="Name" type="email" placeholder="Enter Your Email ID" required>
-        <textarea class="Name3" rows="4" cols="50" placeholder="Enter Your Message"></textarea>
-        <input class="C_a-btn" type="submit" value="Content Me">
-      </form>
+
+      </div>
+    </div>
+
   </main>
   <!-- footer --------------------------------------------------- -->
   <footer>
     <div class="row">
       <div class="col">
-        <h2 class="footer-logo">Project 1</h2>
+        <h2 class="footer-logo" >Project 1</h2>
         <p id="para">
-          MUSIC IS A PIECE OF ART THAT GOES IN THE EARS STRIGHT TO THE HEART.
+       MUSIC IS A PIECE OF ART THAT GOES IN THE EARS STRIGHT TO THE HEART.
         </p>
       </div>
       <div class="col">
@@ -157,8 +165,14 @@
   <!-- fontawesome logo ----–----------- -->
   <script src="https://kit.fontawesome.com/6a20098ea0.js" crossorigin="anonymous"></script>
 
+
+  <!-- Auto type Home page ----–----------- -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
   <!--  Link a js --------------------- -->
-  <script src="js/Navigation-bar.js"></script>
+  <script src= "{{ url_for('static', filename='js/Home.js') }}"></script>
+  <script src= "{{ url_for('static', filename='js/Navigation-bar.js') }}"></script>
 
   <!-- ionicon ----------------------- -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

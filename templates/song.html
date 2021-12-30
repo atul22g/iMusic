@@ -6,15 +6,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=divice-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/svg+xml" href= "icons/android-chrome-512x512.png" />
-  
+  <link rel="icon" type="image/svg+xml" href= "{{ url_for('static', filename='icons/android-chrome-512x512.png') }}" />
+
   <!-- Music Player-------------------------------- -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Link a css ----–----------- -->
-  <link rel="stylesheet" href= "css/Style.css" type="text/css" media="all" />
-  <link rel="stylesheet" href= "css/Navigation-bar.css" type="text/css" media="all">
-  <link rel="stylesheet" href= "css/Music-Player.css" type="text/css" media="all">
-  <link rel="stylesheet" href= "css/footer.css" type="text/css" media="all">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}" type="text/css" media="all" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Navigation-bar.css') }}" type="text/css" media="all">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Music-Player.css') }}" type="text/css" media="all">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}" type="text/css" media="all">
 
   <title> Project 1</title>
 </head>
@@ -27,34 +27,34 @@
     <!-- Navigation bar--------------------------------------------------------- -->
     <div class="navigation">
       <ul>
-        <li class="list ">
-          <a href= "index.html">
+        <li class="list">
+          <a href= "/">
             <span class="icon">
-              <img src= "icons/icons8-home-99999999.png">
+              <img src= "{{ url_for('static', filename='icons/icons8-home-99999999.png') }}">
             </span>
             <span class="nav-text">Home</span>
           </a>
         </li>
         <li class="list active">
-          <a href= "song.html">
+          <a href= "/song">
             <span class="icon">
-              <img src= "icons/icons8-music-player-100.png">
+              <img src= "{{ url_for('static', filename='icons/icons8-music-player-100.png') }}">
             </span>
             <span class="nav-text">Song</span>
           </a>
         </li>
         <li class="list">
-          <a href= "content.html">
+          <a href= "/content">
             <span class="icon">
-              <img src= "icons/icons8-contact-us-100.png">
+              <img src= "{{ url_for('static', filename='icons/icons8-contact-us-100.png') }}">
             </span>
             <span class="nav-text">Contact</span>
           </a>
         </li>
         <li class="list">
-          <a href= "Log-in.html">
+          <a href= "/log-in">
             <span class="icon">
-              <img src= "icons/icons8-log-in-100.png">
+              <img src= "{{ url_for('static', filename='icons/icons8-log-in-100.png') }}">
             </span>
             <span class="nav-text">Log in</span>
           </a>
@@ -83,7 +83,7 @@
         <div class="small_music_player">
           <div class="s_player_img">
             <div class="playing_img">
-              <img src="images/1.jpg" alt="">
+              <img src="images/1.jpg" alt="image not found">
             </div>
 
             <!-- wave animation part -->
@@ -115,7 +115,7 @@
           </div>
 
           <div class="song_img">
-            <img src="images/1.jpg" alt="">
+            <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="">
           </div>
 
           <div class="song_description">
@@ -202,9 +202,9 @@
   <script src="https://kit.fontawesome.com/6a20098ea0.js" crossorigin="anonymous"></script>
 
   <!--  Link a js --------------------- -->
-  <script src= "js/song_list.js"></script>
-  <script src="js/Music-Player.js"></script>
-  <script src= "js/Navigation-bar.js"></script>
+  <script src= "{{ url_for('static', filename='js/song_list.js') }}"></script>
+  <script src= "{{ url_for('static', filename='js/Music-Player.js') }}"></script>
+  <script src= "{{ url_for('static', filename='js/Navigation-bar.js') }}"></script>
 
     <!-- ionicon ----------------------- -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
