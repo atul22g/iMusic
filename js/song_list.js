@@ -2,21 +2,21 @@
 let All_song = [
    {
      name: "Woh Badtameez",
-     path: "/static/music/1.mp3",
-     img:  "/static/images/1.jpg",
+     path: "music/1.mp3",
+     img: "images/1.jpg",
      singer: "Taran Saini"
    },
    {
      name: "Bholenath (A Love Story)",
-     path: "/static/music/2.mp3",
-     img: "/static/images/2.jpg",
+     path: "music/2.mp3",
+     img: "images/2.jpg",
      singer: "Kaka"
    },
    {
      name: "Jahaan tu chala",
-     path: "/static/music/3.mp3",
-     img: "/static/images/3.jpg",
-     singer: "/static/Jasleen Royal"
+     path: "music/3.mp3",
+     img: "images/3.jpg",
+     singer: "Jasleen Royal"
    }
   //  {
   //    name: "Shahed -Indian Fusion",

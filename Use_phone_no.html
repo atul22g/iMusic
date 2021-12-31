@@ -9,10 +9,10 @@
     <link rel="icon" type="image/svg+xml" href= "icons/android-chrome-512x512.png" />
 
     <!-- Link a css ----–----------- -->
-    <link rel="stylesheet" href= "{{ url_for('static', filename='css/Style.css') }}" type="text/css" media="all" />
-    <link rel="stylesheet" href= "{{ url_for('static', filename='css/Navigation-bar.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href= "{{ url_for('static', filename='css/use_phone_no.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href= "{{ url_for('static', filename='css/footer.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href= "css/Style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href= "css/Navigation-bar.css" type="text/css" media="all">
+    <link rel="stylesheet" href= "css/use_phone_no.css" type="text/css" media="all">
+    <link rel="stylesheet" href= "css/footer.css" type="text/css" media="all">
 
     <title> Project 1</title>
 </head>
@@ -28,33 +28,33 @@
             <div class="navigation">
                 <ul>
                     <li class="list">
-                        <a href= "/">
+                        <a href= "index.html">
                             <span class="icon">
-                                <img src= "{{ url_for('static', filename='icons/icons8-home-99999999.png') }}">
+                                <img src= "icons/icons8-home-99999999.png">
                             </span>
                             <span class="nav-text">Home</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href= "/song">
+                        <a href= "song.html">
                             <span class="icon">
-                                <img src= "{{ url_for('static', filename='icons/icons8-music-player-100.png') }}">
+                                <img src= "icons/icons8-music-player-100.png">
                             </span>
                             <span class="nav-text">Song</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href= "/content">
+                        <a href= "content.html">
                             <span class="icon">
-                                <img src="{{ url_for('static', filename='icons/icons8-contact-us-100.png') }}">
+                                <img src="icons/icons8-contact-us-100.png">
                             </span>
                             <span class="nav-text">Contact</span>
                         </a>
                     </li>
                     <li class="list active">
-                        <a href= "/log-in">
+                        <a href= "Log-in.html">
                             <span class="icon">
-                                <img src= "{{ url_for('static', filename='icons/icons8-log-in-100.png') }}">
+                                <img src= "icons/icons8-log-in-100.png">
                             </span>
                             <span class="nav-text">Log in</span>
                         </a>
@@ -72,7 +72,7 @@
                 <i class="fa fa-phone phone_icon"></i>
                 <input class="Name" type="tel" minlength="10" maxlength="10" placeholder="Enter Your Phone No" required>
                 <div class="Use_phone_no_container">
-                    <a class="Use_phone_no" href= "/forget_Password">Use Email Id</a>
+                    <a class="Use_phone_no" href= "forget_Password.html">Use Email Id</a>
                 </div>
                 <input class="C_a-btn" type="submit" value="Get The OTP">
 
@@ -112,10 +112,10 @@
                         <ion-icon name="arrow-forward"></ion-icon>
                     </button>
                 </form>
-               <div class="social-icons">
-          <a href="https://www.instagram.com/atul_.8570/" target="_blank"><i class="fa fa-instagram"></i></a>
-          <a href="https://github.com/Atul22g" target="_blank"><i class="fa fa-github"></i></a>
-        </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/atul_.8570/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/Atul22g" target="_blank"><i class="fa fa-github"></i></a>
+                  </div>
             </div>
         </div>
         <hr>ght">Project 1 &copy; I agree Terms & Condition and Privacy Cookies Policy</p>
