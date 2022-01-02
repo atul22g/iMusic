@@ -108,6 +108,10 @@ form input {
     cursor: pointer;
 }
 
+.social-icons .fa:hover {
+    background: silver;
+}
+
 hr {
     width: 90%;
     border: 0;
