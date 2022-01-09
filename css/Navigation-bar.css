@@ -15,16 +15,7 @@
   align-items: center;
   border-right: 10px solid white;
 }
-
-#logo img {
-  border-radius: 50%;
-  width: 4em;
-  height: 4em;
-  margin-left: 2em;
-}
-
 #logo span {
-
   font-family: 'Playball', cursive;
   margin-left: 50px;
   font-size: 2.5rem;

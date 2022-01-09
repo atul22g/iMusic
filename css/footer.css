@@ -13,7 +13,7 @@ footer {
 p {
     color: silver;
     padding: 3px 0px;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .col h3 {
@@ -31,7 +31,7 @@ h4 {
 }
 
 .footer-logo {
-    font-family: 'Oooh Baby', cursive;
+    font-family: 'Playball', cursive;
     padding-bottom: 1em;
     font-size: 3rem;
     font-weight: bolder;
