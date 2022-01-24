@@ -1,223 +1,222 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=divice-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-  
-  <!-- Music Player-------------------------------- -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Link a css ----–----------- -->
-  <link rel="stylesheet" href= "css/Style.css" type="text/css" media="all" />
-  <link rel="stylesheet" href= "css/Navigation-bar.css" type="text/css" media="all">
-  <link rel="stylesheet" href= "css/Music-Player.css" type="text/css" media="all">
-  <link rel="stylesheet" href= "css/footer.css" type="text/css" media="all">
-
-  <title> Project 1</title>
-</head>
-
-<body>
-  <div id="top">
-    <div id="logo">
-      <span>Project 1</span>
-    </div>
-    <!-- Navigation bar--------------------------------------------------------- -->
-    <div class="navigation">
-      <ul>
-        <li class="list ">
-          <a href= "index.html">
-            <span class="icon">
-              <img src= "icons/icons8-home-99999999.png">
-            </span>
-            <span class="nav-text">Home</span>
-          </a>
-        </li>
-        <li class="list active">
-          <a href= "song.html">
-            <span class="icon">
-              <img src= "icons/icons8-music-player-100.png">
-            </span>
-            <span class="nav-text">Song</span>
-          </a>
-        </li>
-        <li class="list">
-          <a href= "content.html">
-            <span class="icon">
-              <img src= "icons/icons8-contact-us-100.png">
-            </span>
-            <span class="nav-text">Contact</span>
-          </a>
-        </li>
-        <li class="list">
-          <a href= "Log-in.html">
-            <span class="icon">
-              <img src= "icons/icons8-log-in-100.png">
-            </span>
-            <span class="nav-text">Log in</span>
-          </a>
-        </li>
-        <div class="indicator">
-          <span></span>
-        </div>
-      </ul>
-    </div>
-  </div>
-  <!-- Music Player --------------------- -->
-  <main>
-<div id="bg-player">
-    <div class="main">
-      <!-- top section -->
-      <div class="top_section">
-        <h5>Music Player&nbsp;&nbsp;<i class="fa fa-headphones" aria-hidden="true"></i></h5>
-      </div>
-
-
-      <div class="tracks">
-
-        <!-- list of song will add here from 'song_list.js' file -->
-
-        <!-- small music player -->
-        <div class="small_music_player">
-          <div class="s_player_img">
-            <div class="playing_img">
-              <img src="images/1.jpg" alt="">
-            </div>
-
-            <!-- wave animation part -->
-            <div class="wave_animation">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </div>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+    <!-- Music Player-------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Link a css ----–----------- -->
+    <link rel="stylesheet" href="css/Style.css" type="text/css" />
+    <link rel="stylesheet" href="css/Navigation-bar.css" type="text/css" />
+    <link rel="stylesheet" href="css/Music-Player.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <title>Project 1 | Music-Player</title>
+  </head>
+  <body>
+    <header id="top">
+      <h1 id="logo">
+        <span>Project 1</span>
+      </h1>
+      <!-- Navigation bar--------------------------------------------------------- -->
+      <nav class="navigation">
+        <ul>
+          <li class="list">
+            <a href="index.html">
+              <span class="icon">
+                <img src="icons/home.ico" />
+              </span>
+              <span class="nav-text">Home</span>
+            </a>
+          </li>
+          <li class="list active">
+            <a href="song.html">
+              <span class="icon">
+                <img src="icons/music.ico" />
+              </span>
+              <span class="nav-text">Song</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="content.html">
+              <span class="icon">
+                <img src="icons/contact.ico" />
+              </span>
+              <span class="nav-text">Contact</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="Log-in.html">
+              <span class="icon">
+                <img src="icons/log in.ico" />
+              </span>
+              <span class="nav-text">Log in</span>
+            </a>
+          </li>
+          <div class="indicator">
+            <span></span>
           </div>
+        </ul>
+      </nav>
+    </header>
+    <!-- Music Player --------------------- -->
+    <main>
+      <section id="bg-player">
+        <sec class="main">
+          <!-- top section -->
+          <sec class="top_section">
+            <h5>
+              Music Player&nbsp;&nbsp;<i
+                class="fa fa-headphones"
+                aria-hidden="true"
+              ></i>
+            </h5>
+          </sec>
 
-          <div class="song_detail">
-            <p id="song_name">Woh Badtameez</p>
-            <p id="artist_name">Taran Saini</p>
-          </div>
-          <i class="fa fa-chevron-up" aria-hidden="true" id="up_player"></i>
-        </div>
+          <sec class="tracks">
+            <!-- list of song will add here from 'song_list.js' file -->
 
+            <!-- small music player -->
+            <sec class="small_music_player">
+              <sec class="s_player_img">
+                <sec class="playing_img">
+                  <img src="images/1.jpg" />
+                </sec>
 
-        <!--  popup music player part -->
-        <div class="popup_music_player">
-          <div class="top">
-            <p>Music Player</p>
-            <i class="fa fa-chevron-down" aria-hidden="true" id="down_player"></i>
-          </div>
+                <!-- wave animation part -->
+                <sec class="wave_animation">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </sec>
+              </sec>
 
-          <div class="song_img">
-            <img src="images/1.jpg" alt="">
-          </div>
+              <sec class="song_detail">
+                <p id="song_name">Woh Badtameez</p>
+                <p id="artist_name">Taran Saini</p>
+              </sec>
+              <i class="fa fa-chevron-up" aria-hidden="true" id="up_player"></i>
+            </sec>
 
-          <div class="song_description">
-            <h3 id="current_track_name">Woh Badtameez</h3>
-            <p id="current_singer_name">Taran Saini</p>
-          </div>
+            <!--  popup music player part -->
+            <sec class="popup_music_player">
+              <sec class="top">
+                <p>Music Player</p>
+                <i
+                  class="fa fa-chevron-down"
+                  aria-hidden="true"
+                  id="down_player"
+                ></i>
+              </sec>
 
-          <div class="controlls">
-            <div class="progress_part">
-              <input type="range" min="0" max="100" value="0" id="slider" onchange="change_duration()">
-              <div class="durations">
-                <p id="current_duration">0:00</p>
-                <p id="total_duration">0:00</p>
-              </div>
+              <sec class="song_img">
+                <img src="images/1.jpg" alt="" />
+              </sec>
 
-            </div>
+              <sec class="song_description">
+                <h3 id="current_track_name">Woh Badtameez</h3>
+                <p id="current_singer_name">Taran Saini</p>
+              </sec>
 
-            <!-- controlls btn's -->
-            <div class="controlls_btns">
-              <button id="backward_btn"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
-              <button id="play_pause_btn"><i class="fa fa-play" aria-hidden="true"></i></button>
-              <button id="forward_btn"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
+              <sec class="controlls">
+                <sec class="progress_part">
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="0"
+                    id="slider"
+                    onchange="change_duration()"
+                  />
+                  <sec class="durations">
+                    <p id="current_duration">0:00</p>
+                    <p id="total_duration">0:00</p>
+                  </sec>
+                </sec>
 
+                <!-- controlls btn's -->
+                <sec class="controlls_btns">
+                  <button id="backward_btn">
+                    <i class="fa fa-step-backward" aria-hidden="true"></i>
+                  </button>
+                  <button id="play_pause_btn">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <button id="forward_btn">
+                    <i class="fa fa-step-forward" aria-hidden="true"></i>
+                  </button>
+                </sec>
+              </sec>
+            </sec>
+          </sec>
+        </sec>
+      </section>
+    </main>
     <!-- footer --------------------------------------------------- -->
     <footer>
       <div class="row">
         <div class="col">
-          <h2 class="footer-logo" >Project 1</h2>
+          <h2 class="footer-logo">Project 1</h2>
           <p id="para">
-         Music is a Piece of Art that gores in the ear Stright to The Heart.
+            Music is a Piece of Art that gores in the ear Stright to The Heart.
           </p>
         </div>
         <div class="col">
-          <h3>Content us <div class="underline">
+          <h3>
+            Content us
+            <div class="underline">
               <span></span>
             </div>
           </h3>
-          <p>
-            vpo jatwar Ambala
-          </p>
-          <p>
-            Ambala city 134201
-          </p>
-          <p class="email-id">
-            example@gmail.com
-          </p>
+          <p>vpo jatwar Ambala</p>
+          <p>Ambala city 134201</p>
+          <p class="email-id">example@gmail.com</p>
           <h4>+91-0123456789</h4>
         </div>
         <div class="col">
-          <h3>COLORIB <div class="underline">
+          <h3>
+            COLORIB
+            <div class="underline">
               <span></span>
             </div>
           </h3>
-          <p id="copyright">
-            &copy; 2022
-          </p>
+          <p id="copyright">&copy; 2022</p>
         </div>
         <div class="col">
-          <h3>Newsletter <div class="underline">
+          <h3>
+            Follow Me
+            <div class="underline">
               <span></span>
             </div>
           </h3>
-          <form id="footer-form" action="#">
-            <ion-icon name="mail"></ion-icon>
-            <input type="email" placeholder="Enter Your Email id" required>
-            <button type="submit" class="footer-btn">
-              <ion-icon name="arrow-forward"></ion-icon>
-            </button>
-          </form>
           <div class="social-icons">
-            <a href="https://www.facebook.com/atul22g" target="_blank"><i class="fa fa-facebook"></i></a>
-           <a href="https://www.instagram.com/atul_22g" target="_blank"><i class="fa fa-instagram"></i></a>
-           <a href="https://github.com/Atul22g" target="_blank"><i class="fa fa-github"></i></a>
-         </div>
+            <a href="https://www.facebook.com/atul22g" target="_blank"
+              ><img src="icons/facebook.ico"
+            /></a>
+            <a href="https://www.instagram.com/atul_22g" target="_blank"
+              ><img src="icons/instagram.ico"
+            /></a>
+            <a href="https://github.com/Atul22g" target="_blank"
+              ><img src="icons/git hub.ico"
+            /></a>
+          </div>
         </div>
       </div>
-  
-      <hr>
-      <p class="copyright">
-        Project 1 &copy; All Rights Reserved
-      </p>
+      <hr />
+      <p class="copyright">Project 1 &copy; All Rights Reserved</p>
     </footer>
-  
-
-  <!-- fontawesome logo ----–----------- -->
-  <script src="https://kit.fontawesome.com/6a20098ea0.js" crossorigin="anonymous"></script>
-
-  <!--  Link a js --------------------- -->
-  <script src= "js/song_list.js"></script>
-  <script src="js/Music-Player.js"></script>
-  <script src= "js/Navigation-bar.js"></script>
-
-    <!-- ionicon ----------------------- -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
-</body>
-
+    <!--  Link a js --------------------- -->
+    <script src="js/song_list.js"></script>
+    <script src="js/Music-Player.js"></script>
+    <script src="js/Navigation-bar.js"></script>
+  </body>
 </html>

@@ -1,182 +1,157 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=divice-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-
-  <!-- Link a css ----–----------- -->
-  <link rel="stylesheet" href="css/Style.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="css/Navigation-bar.css" type="text/css" media="all">
-  <link rel="stylesheet" href="css/Home.css" type="text/css" media="all">
-  <link rel="stylesheet" href="css/footer.css" type="text/css" media="all">
-
-  <title> Project 1</title>
-</head>
-
-<body>
-  <div id="top">
-    <div id="logo">
-      <span>Project 1</span>
-    </div>
-    <!-- Navigation bar--------------------------------------------------------- -->
-    <div class="navigation">
-      <ul>
-        <li class="list active">
-          <a href= "index.html">
-            <span class="icon">
-              <img src= "icons/icons8-home-99999999.png">
-            </span>
-            <span class="nav-text">Home</span>
-          </a>
-        </li>
-        <li class="list">
-          <a href= "song.html">
-            <span class="icon">
-              <img src= "icons/icons8-music-player-100.png">
-            </span>
-            <span class="nav-text">Song</span>
-          </a>
-        </li>
-        <li class="list">
-          <a href= "content.html">
-            <span class="icon">
-              <img src= "icons/icons8-contact-us-100.png">
-            </span>
-            <span class="nav-text">Contact</span>
-          </a>
-        </li>
-        <li class="list">
-          <a href= "Log-in.html">
-            <span class="icon">
-              <img src= "icons/icons8-log-in-100.png">
-            </span>
-            <span class="nav-text">Log in</span>
-          </a>
-        </li>
-        <div class="indicator">
-          <span></span>
-        </div>
-      </ul>
-    </div>
-  </div>
-  <!-- content --------------------- -->
-  <main>
-
-    <div id="top-div">
-      <img id="profile" src= "icons/icon.png">
-      <strong id="profile-line"><span class="type"></span></strong>
-      <p id="occupation">
-        Music is like a dream. One that I cannot hear.
-      </p>
-    </div>
-
-    <div id="bottom-div">
-      <div class="box_container">
-        <div class="box">
-          <img src= "images/background/box1.jpeg" class="box_img">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+    <!-- Link a css ----–----------- -->
+    <link rel="stylesheet" href="css/Style.css" type="text/css" />
+    <link rel="stylesheet" href="css/Navigation-bar.css" type="text/css" />
+    <link rel="stylesheet" href="css/Home.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <title>Project 1 | Home</title>
+  </head>
+  <body>
+    <header id="top">
+      <h1 id="logo">
+        <span>Project 1</span>
+      </h1>
+      <!-- Navigation bar--------------------------------------------------------- -->
+      <nav class="navigation">
+        <ul>
+          <li class="list active">
+            <a href="index.html">
+              <span class="icon">
+                <img src="icons/home.ico" />
+              </span>
+              <span class="nav-text">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="song.html">
+              <span class="icon">
+                <img src="icons/music.ico" />
+              </span>
+              <span class="nav-text">Song</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="content.html">
+              <span class="icon">
+                <img src="icons/contact.ico" />
+              </span>
+              <span class="nav-text">Contact</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="Log-in.html">
+              <span class="icon">
+                <img src="icons/log in.ico" />
+              </span>
+              <span class="nav-text">Log in</span>
+            </a>
+          </li>
+          <div class="indicator">
+            <span></span>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <!-- content --------------------- -->
+    <main>
+      <section id="top-div">
+        <img id="profile" src="images/background/icon.png" />
+        <strong id="profile-line"><span class="type"></span></strong>
+        <p id="occupation">Music is like a dream. One that I cannot hear.</p>
+      </section>
+      <section class="box_container">
+        <!-- Box 1 -->
+        <sec class="box">
+          <img src="images/background/box1.jpeg" class="box_img" />
           <h5 class="box_heading">Your Faviourite Song</h5>
-          <p class="box_heading">Behind every Faviourite Song There is an Untold Story ...</p>
-          <a class="box_button" href= "song.html">Enjoy The Song</a>
-        </div>
-
-        <div class="box">
-          <img src="images/background/box2.jpg " class="box_img">
+          <p class="box_heading">
+            Behind every Faviourite Song There is an Untold Story ...
+          </p>
+          <a class="box_button" href="song.html">Enjoy The Song</a>
+        </sec>
+        <!-- Box 2 -->
+        <sec class="box">
+          <img src="images/background/box2.jpg " class="box_img" />
           <h5 class="box_heading">Content Me</h5>
-          <p class="box_heading">Everything happens For me, not me. Bynron Katie ...</p>
-          <a class="box_button" href= "content.html">Content Me</a>
-        </div>
-
-        <div class="box">
-          <img src="images/background/box3.jpg " class="box_img">
+          <p class="box_heading">
+            Everything happens For me, not me. Bynron Katie ...
+          </p>
+          <a class="box_button" href="content.html">Content Me</a>
+        </sec>
+        <!-- Box 3 -->
+        <sec class="box">
+          <img src="images/background/box3.jpg " class="box_img" />
           <h5 class="box_heading">Log In</h5>
-          <p class="box_heading">Jab tak ho Matlab khaas Tab Tak dety hain Log sath ...</p>
-          <a class="box_button" href= "Log-in.html">Log In</a>
+          <p class="box_heading">
+            Jab tak ho Matlab khaas Tab Tak dety hain Log sath ...
+          </p>
+          <a class="box_button" href="Log-in.html">Log In</a>
+        </sec>
+      </section>
+    </main>
+    <!-- footer --------------------------------------------------- -->
+    <footer>
+      <div class="row">
+        <div class="col">
+          <h2 class="footer-logo">Project 1</h2>
+          <p id="para">
+            Music is a Piece of Art that gores in the ear Stright to The Heart.
+          </p>
         </div>
-
-      </div>
-    </div>
-
-  </main>
-  <!-- footer --------------------------------------------------- -->
-  <footer>
-    <div class="row">
-      <div class="col">
-        <h2 class="footer-logo" >Project 1</h2>
-        <p id="para">
-       Music is a Piece of Art that gores in the ear Stright to The Heart.
-        </p>
-      </div>
-      <div class="col">
-        <h3>Content us <div class="underline">
-            <span></span>
+        <div class="col">
+          <h3>
+            Content us
+            <div class="underline">
+              <span></span>
+            </div>
+          </h3>
+          <p>vpo jatwar Ambala</p>
+          <p>Ambala city 134201</p>
+          <p class="email-id">example@gmail.com</p>
+          <h4>+91-0123456789</h4>
+        </div>
+        <div class="col">
+          <h3>
+            COLORIB
+            <div class="underline">
+              <span></span>
+            </div>
+          </h3>
+          <p id="copyright">&copy; 2022</p>
+        </div>
+        <div class="col">
+          <h3>
+            Follow Me
+            <div class="underline">
+              <span></span>
+            </div>
+          </h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/atul22g" target="_blank"
+              ><img src="icons/facebook.ico"
+            /></a>
+            <a href="https://www.instagram.com/atul_22g" target="_blank"
+              ><img src="icons/instagram.ico"
+            /></a>
+            <a href="https://github.com/Atul22g" target="_blank"
+              ><img src="icons/git hub.ico"
+            /></a>
           </div>
-        </h3>
-        <p>
-          vpo jatwar Ambala
-        </p>
-        <p>
-          Ambala city 134201
-        </p>
-        <p class="email-id">
-          example@gmail.com
-        </p>
-        <h4>+91-0123456789</h4>
+        </div>
       </div>
-      <div class="col">
-        <h3>COLORIB <div class="underline">
-            <span></span>
-          </div>
-        </h3>
-        <p id="copyright">
-          &copy; 2022
-        </p>
-      </div>
-      <div class="col">
-        <h3>Newsletter <div class="underline">
-            <span></span>
-          </div>
-        </h3>
-        <form id="footer-form" action="#">
-          <ion-icon name="mail"></ion-icon>
-          <input type="email" placeholder="Enter Your Email id" required>
-          <button type="submit" class="footer-btn">
-            <ion-icon name="arrow-forward"></ion-icon>
-          </button>
-        </form>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/atul22g" target="_blank"><i class="fa fa-facebook"></i></a>
-         <a href="https://www.instagram.com/atul_22g" target="_blank"><i class="fa fa-instagram"></i></a>
-         <a href="https://github.com/Atul22g" target="_blank"><i class="fa fa-github"></i></a>
-       </div>
-      </div>
-    </div>
-
-    <hr>
-    <p class="copyright">
-      Project 1 &copy; All Rights Reserved
-    </p>
-  </footer>
-
-  <!-- fontawesome logo ----–----------- -->
-  <script src="https://kit.fontawesome.com/6a20098ea0.js" crossorigin="anonymous"></script>
-
-
-  <!-- Auto type Home page ----–----------- -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-
-  <!--  Link a js --------------------- -->
-  <script src= "js/Home.js"></script>
-  <script src= "js/Navigation-bar.js"></script>
-
-  <!-- ionicon ----------------------- -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+      <hr />
+      <p class="copyright">Project 1 &copy; All Rights Reserved</p>
+    </footer>
+    <!-- Auto type Home page ----–----------- -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!--  Link a js --------------------- -->
+    <script src="js/Home.js"></script>
+    <script src="js/Navigation-bar.js"></script>
+  </body>
 </html>

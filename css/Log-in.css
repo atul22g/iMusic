@@ -16,7 +16,7 @@
 }
 
 .login-logo {
-  font-family: 'Literata', serif;
+  font-family: "Literata", serif;
   margin-top: 1.5em;
   font-size: 4rem;
   font-weight: bolder;
@@ -46,8 +46,7 @@
   outline: none;
 }
 
-@media screen and (max-width:350px) {
-
+@media screen and (max-width: 350px) {
   .login {
     width: 15em;
   }
@@ -56,11 +55,10 @@
     justify-items: space-between;
     display: flex;
   }
-
 }
 
 .login-btn {
-  font-family: 'Rasa', serif;
+  font-family: "Rasa", serif;
   color: black;
   display: flex;
   justify-content: center;
@@ -93,4 +91,8 @@
   text-decoration: none;
   color: black;
   font-weight: 500;
+}
+
+.bottom-line:hover {
+  text-decoration: underline;
 }

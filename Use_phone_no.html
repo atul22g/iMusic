@@ -1,156 +1,136 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
-    
-    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
     <!-- Link a css ----–----------- -->
-    <link rel="stylesheet" href= "css/Style.css" type="text/css" media="all" />
-    <link rel="stylesheet" href= "css/Navigation-bar.css" type="text/css" media="all">
-    <link rel="stylesheet" href= "css/use_phone_no.css" type="text/css" media="all">
-    <link rel="stylesheet" href= "css/footer.css" type="text/css" media="all">
-
-    <title> Project 1</title>
-</head>
-
-<body>
+    <link rel="stylesheet" href="css/Style.css" type="text/css" />
+    <link rel="stylesheet" href="css/Navigation-bar.css" type="text/css" />
+    <link rel="stylesheet" href="css/use_phone_no.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <title>Project 1 | Forget Password</title>
+  </head>
+  <body>
     <!-- Navigation bar--------------------- -->
-    <header>
-        <div id="top">
-            <div id="logo">
-                <span>Project 1</span>
-            </div>
-
-            <div class="navigation">
-                <ul>
-                    <li class="list">
-                        <a href= "index.html">
-                            <span class="icon">
-                                <img src= "icons/icons8-home-99999999.png">
-                            </span>
-                            <span class="nav-text">Home</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href= "song.html">
-                            <span class="icon">
-                                <img src= "icons/icons8-music-player-100.png">
-                            </span>
-                            <span class="nav-text">Song</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href= "content.html">
-                            <span class="icon">
-                                <img src="icons/icons8-contact-us-100.png">
-                            </span>
-                            <span class="nav-text">Contact</span>
-                        </a>
-                    </li>
-                    <li class="list active">
-                        <a href= "Log-in.html">
-                            <span class="icon">
-                                <img src= "icons/icons8-log-in-100.png">
-                            </span>
-                            <span class="nav-text">Log in</span>
-                        </a>
-                    </li>
-                    <div class="indicator"><span></span></div>
-                </ul>
-            </div>
-        </div>
+    <header id="top">
+      <h1 id="logo">
+        <span>Project 1</span>
+      </h1>
+      <nav class="navigation">
+        <ul>
+          <li class="list">
+            <a href="index.html">
+              <span class="icon">
+                <img src="icons/home.ico" />
+              </span>
+              <span class="nav-text">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="song.html">
+              <span class="icon">
+                <img src="icons/music.ico" />
+              </span>
+              <span class="nav-text">Song</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="content.html">
+              <span class="icon">
+                <img src="icons/contact.ico" />
+              </span>
+              <span class="nav-text">Contact</span>
+            </a>
+          </li>
+          <li class="list active">
+            <a href="Log-in.html">
+              <span class="icon">
+                <img src="icons/log in.ico" />
+              </span>
+              <span class="nav-text">Log in</span>
+            </a>
+          </li>
+          <div class="indicator"><span></span></div>
+        </ul>
+      </nav>
     </header>
     <!-- End navigation bar --------------- -->
     <main>
-        <div id="bg-login">
-            <h2 id="c_a_heading">Forget Your Password</h2>
-            <form id="create_account_container" action="#">
-                <i class="fa fa-phone phone_icon"></i>
-                <input class="Name" type="tel" minlength="10" maxlength="10" placeholder="Enter Your Phone No" required>
-                <div class="Use_phone_no_container">
-                    <a class="Use_phone_no" href= "forget_Password.html">Use Email Id</a>
-                </div>
-                <input class="C_a-btn" type="submit" value="Get The OTP">
-
-            </form>
+      <section id="bg-login">
+        <h2 id="c_a_heading">Forget Your Password</h2>
+        <form id="create_account_container" action="#">
+          <img src="icons/phone.ico" class="phone_icon" />
+          <input
+            class="Name"
+            type="tel"
+            minlength="10"
+            maxlength="10"
+            placeholder="Enter Your Phone No"
+            required
+          />
+          <sec class="Use_phone_no_container">
+            <a class="Use_phone_no" href="forget_Password.html">Use Email Id</a>
+          </sec>
+          <input class="C_a-btn" type="submit" value="Get The OTP" />
+        </form>
+      </section>
     </main>
     <!-- footer --------------------------------------------------- -->
     <footer>
-        <div class="row">
-          <div class="col">
-            <h2 class="footer-logo" >Project 1</h2>
-            <p id="para">
-           Music is a Piece of Art that gores in the ear Stright to The Heart.
-            </p>
-          </div>
-          <div class="col">
-            <h3>Content us <div class="underline">
-                <span></span>
-              </div>
-            </h3>
-            <p>
-              vpo jatwar Ambala
-            </p>
-            <p>
-              Ambala city 134201
-            </p>
-            <p class="email-id">
-              example@gmail.com
-            </p>
-            <h4>+91-0123456789</h4>
-          </div>
-          <div class="col">
-            <h3>COLORIB <div class="underline">
-                <span></span>
-              </div>
-            </h3>
-            <p id="copyright">
-              &copy; 2022
-            </p>
-          </div>
-          <div class="col">
-            <h3>Newsletter <div class="underline">
-                <span></span>
-              </div>
-            </h3>
-            <form id="footer-form" action="#">
-              <ion-icon name="mail"></ion-icon>
-              <input type="email" placeholder="Enter Your Email id" required>
-              <button type="submit" class="footer-btn">
-                <ion-icon name="arrow-forward"></ion-icon>
-              </button>
-            </form>
-             <div class="social-icons">
-               <a href="https://www.facebook.com/atul22g" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a href="https://www.instagram.com/atul_22g" target="_blank"><i class="fa fa-instagram"></i></a>
-              <a href="https://github.com/Atul22g" target="_blank"><i class="fa fa-github"></i></a>
+      <div class="row">
+        <div class="col">
+          <h2 class="footer-logo">Project 1</h2>
+          <p id="para">
+            Music is a Piece of Art that gores in the ear Stright to The Heart.
+          </p>
+        </div>
+        <div class="col">
+          <h3>
+            Content us
+            <div class="underline">
+              <span></span>
             </div>
+          </h3>
+          <p>vpo jatwar Ambala</p>
+          <p>Ambala city 134201</p>
+          <p class="email-id">example@gmail.com</p>
+          <h4>+91-0123456789</h4>
+        </div>
+        <div class="col">
+          <h3>
+            COLORIB
+            <div class="underline">
+              <span></span>
+            </div>
+          </h3>
+          <p id="copyright">&copy; 2022</p>
+        </div>
+        <div class="col">
+          <h3>
+            Follow Me
+            <div class="underline">
+              <span></span>
+            </div>
+          </h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/atul22g" target="_blank"
+              ><img src="icons/facebook.ico"
+            /></a>
+            <a href="https://www.instagram.com/atul_22g" target="_blank"
+              ><img src="icons/instagram.ico"
+            /></a>
+            <a href="https://github.com/Atul22g" target="_blank"
+              ><img src="icons/git hub.ico"
+            /></a>
           </div>
         </div>
-    
-        <hr>
-        <p class="copyright">
-          Project 1 &copy; All Rights Reserved
-        </p>
-      </footer>
-    
-      
-    <!-- fontawesome logo ----–----------- -->
-    <script src="https://kit.fontawesome.com/6a20098ea0.js" crossorigin="anonymous"></script>
-
-
-
+      </div>
+      <hr />
+      <p class="copyright">Project 1 &copy; All Rights Reserved</p>
+    </footer>
     <!--  Link a js --------------------- -->
-    <script src= "js/Navigation-bar.js"></script>
-
-    <!-- ionicon ----------------------- -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script src="js/Navigation-bar.js"></script>
+  </body>
 </html>

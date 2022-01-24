@@ -1,167 +1,185 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8 ">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=divice-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-
-  <!-- Link a css ----–----------- -->
-  <link rel="stylesheet" href="css/Style.css" type="text/css" media="all ">
-  <link rel="stylesheet" href="css/Navigation-bar.css" type="text/css" media="all">
-  <link rel="stylesheet" href="css/Content.css" type="text/css" media="all">
-  <link rel="stylesheet" href="css/footer.css" type="text/css" media="all">
-
-  <title> Project 1</title>
-</head>
-
-<body>
-  <div id="top">
-    <div id="logo">
-      <span>Project 1</span>
-    </div>
-    <!-- Navigation bar--------------------------------------------------------- -->
-    <div class="navigation">
-      <ul>
-        <li class="list ">
-          <a href="index.html">
-            <span class="icon">
-              <img src="icons/icons8-home-99999999.png">
-            </span>
-            <span class="nav-text">Home</span>
-          </a>
-        </li>
-        <li class="list">
-          <a href="song.html">
-            <span class="icon">
-              <img src="icons/icons8-music-player-100.png">
-            </span>
-            <span class="nav-text">Song</span>
-          </a>
-        </li>
-        <li class="list active">
-          <a href="content.html">
-            <span class="icon">
-              <img src="icons/icons8-contact-us-100.png">
-            </span>
-            <span class="nav-text">Contact</span>
-          </a>
-        </li>
-        <li class="list">
-          <a href="Log-in.html">
-            <span class="icon">
-              <img src="icons/icons8-log-in-100.png">
-            </span>
-            <span class="nav-text">Log in</span>
-          </a>
-        </li>
-        <div class="indicator">
-          <span></span>
-        </div>
-      </ul>
-    </div>
-  </div>
-  <!-- content --------------------- -->
-  <main>
-    <div id="bg-login">
-      <h2 id="c_a_heading">Content Me</h2>
-      <form id="create_account_container" action="#">
-        <div id="name_container">
-          <input class="Name" type="text" placeholder="Enter Your Name" required>
-          <input class="Name" type="text" placeholder="Enter Your Last Name" required>
-        </div>
-        <div id="name_container">
-          <input class="Name" type="text" placeholder="Enter Your Country" required>
-          <input class="Name" type="text" placeholder="Enter Your city" required>
-        </div>
-        <div id="name_container2">
-          <select name="Phone" class="Name2">
-            <option value="+91">+91</option>
-            <option value="+1">+1</option>
-            <option value="+353">+353</option>
-            <option value="+51">+51</option>
-            <option value="+43">+43</option>
-            <option value="+43">+43</option>
-            <option value="+42">+42</option>
-          </select>
-          <input class="Name2" type="tel" minlength="10" maxlength="10" placeholder="Enter Your Phone No" required>
-        </div>
-        <input class="Name" type="email" placeholder="Enter Your Email ID" required>
-        <textarea class="Name3" rows="4" cols="50" placeholder="Enter Your Message"></textarea>
-        <input class="C_a-btn" type="submit" value="Content Me">
-      </form>
-  </main>
-   <!-- footer --------------------------------------------------- -->
-   <footer>
-    <div class="row">
-      <div class="col">
-        <h2 class="footer-logo" >Project 1</h2>
-        <p id="para">
-       Music is a Piece of Art that gores in the ear Stright to The Heart.
-        </p>
-      </div>
-      <div class="col">
-        <h3>Content us <div class="underline">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8 " />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+    <!-- Link a css ----–----------- -->
+    <link rel="stylesheet" href="css/Style.css" type="text/css" />
+    <link rel="stylesheet" href="css/Navigation-bar.css" type="text/css" />
+    <link rel="stylesheet" href="css/Content.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <title>Project 1 | Contact Me</title>
+  </head>
+  <body>
+    <header id="top">
+      <h1 id="logo">
+        <span>Project 1</span>
+      </h1>
+      <!-- Navigation bar--------------------------------------------------------- -->
+      <nav class="navigation">
+        <ul>
+          <li class="list">
+            <a href="index.html">
+              <span class="icon">
+                <img src="icons/home.ico" />
+              </span>
+              <span class="nav-text">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="song.html">
+              <span class="icon">
+                <img src="icons/music.ico" />
+              </span>
+              <span class="nav-text">Song</span>
+            </a>
+          </li>
+          <li class="list active">
+            <a href="content.html">
+              <span class="icon">
+                <img src="icons/contact.ico" />
+              </span>
+              <span class="nav-text">Contact</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="Log-in.html">
+              <span class="icon">
+                <img src="icons/log in.ico" />
+              </span>
+              <span class="nav-text">Log in</span>
+            </a>
+          </li>
+          <div class="indicator">
             <span></span>
           </div>
-        </h3>
-        <p>
-          vpo jatwar Ambala
-        </p>
-        <p>
-          Ambala city 134201
-        </p>
-        <p class="email-id">
-          example@gmail.com
-        </p>
-        <h4>+91-0123456789</h4>
-      </div>
-      <div class="col">
-        <h3>COLORIB <div class="underline">
-            <span></span>
-          </div>
-        </h3>
-        <p id="copyright">
-          &copy; 2022
-        </p>
-      </div>
-      <div class="col">
-        <h3>Newsletter <div class="underline">
-            <span></span>
-          </div>
-        </h3>
-        <form id="footer-form" action="#">
-          <ion-icon name="mail"></ion-icon>
-          <input type="email" placeholder="Enter Your Email id" required>
-          <button type="submit" class="footer-btn">
-            <ion-icon name="arrow-forward"></ion-icon>
-          </button>
+        </ul>
+      </nav>
+    </header>
+    <!-- content --------------------- -->
+    <main>
+      <section id="bg-login">
+        <h2 id="c_a_heading">Content Me</h2>
+        <form id="create_account_container" action="#">
+          <sec id="name_container">
+            <input
+              class="Name"
+              type="text"
+              placeholder="Enter Your Name"
+              required
+            />
+            <input
+              class="Name"
+              type="text"
+              placeholder="Enter Your Last Name"
+              required
+            />
+          </sec>
+          <sec id="name_container">
+            <input
+              class="Name"
+              type="text"
+              placeholder="Enter Your Country"
+              required
+            />
+            <input
+              class="Name"
+              type="text"
+              placeholder="Enter Your city"
+              required
+            />
+          </sec>
+          <sec id="name_container2">
+            <select name="Phone" class="Name2">
+              <option value="+91">+91</option>
+              <option value="+1">+1</option>
+              <option value="+353">+353</option>
+              <option value="+51">+51</option>
+              <option value="+43">+43</option>
+              <option value="+43">+43</option>
+              <option value="+42">+42</option>
+            </select>
+            <input
+              class="Name2"
+              type="tel"
+              minlength="10"
+              maxlength="10"
+              placeholder="Enter Your Phone No"
+              required
+            />
+          </sec>
+          <input
+            class="Name"
+            type="email"
+            placeholder="Enter Your Email ID"
+            required
+          />
+          <textarea
+            class="Name3"
+            rows="4"
+            cols="50"
+            placeholder="Enter Your Message"
+          ></textarea>
+          <input class="C_a-btn" type="submit" value="Content Me" />
         </form>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/atul22g" target="_blank"><i class="fa fa-facebook"></i></a>
-         <a href="https://www.instagram.com/atul_22g" target="_blank"><i class="fa fa-instagram"></i></a>
-         <a href="https://github.com/Atul22g" target="_blank"><i class="fa fa-github"></i></a>
-       </div>
+      </section>
+    </main>
+    <!-- footer --------------------------------------------------- -->
+    <footer>
+      <div class="row">
+        <div class="col">
+          <h2 class="footer-logo">Project 1</h2>
+          <p id="para">
+            Music is a Piece of Art that gores in the ear Stright to The Heart.
+          </p>
+        </div>
+        <div class="col">
+          <h3>
+            Content us
+            <div class="underline">
+              <span></span>
+            </div>
+          </h3>
+          <p>vpo jatwar Ambala</p>
+          <p>Ambala city 134201</p>
+          <p class="email-id">example@gmail.com</p>
+          <h4>+91-0123456789</h4>
+        </div>
+        <div class="col">
+          <h3>
+            COLORIB
+            <div class="underline">
+              <span></span>
+            </div>
+          </h3>
+          <p id="copyright">&copy; 2022</p>
+        </div>
+        <div class="col">
+          <h3>
+            Follow Me
+            <div class="underline">
+              <span></span>
+            </div>
+          </h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/atul22g" target="_blank"
+              ><img src="icons/facebook.ico"
+            /></a>
+            <a href="https://www.instagram.com/atul_22g" target="_blank"
+              ><img src="icons/instagram.ico"
+            /></a>
+            <a href="https://github.com/Atul22g" target="_blank"
+              ><img src="icons/git hub.ico"
+            /></a>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <hr>
-    <p class="copyright">
-      Project 1 &copy; All Rights Reserved
-    </p>
-  </footer>
-  <!-- fontawesome logo ----–----------- -->
-  <script src="https://kit.fontawesome.com/6a20098ea0.js" crossorigin="anonymous"></script>
-
-  <!--  Link a js --------------------- -->
-  <script src="js/Navigation-bar.js"></script>
-
-  <!-- ionicon ----------------------- -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+      <hr />
+      <p class="copyright">Project 1 &copy; All Rights Reserved</p>
+    </footer>
+    <!--  Link a js --------------------- -->
+    <script src="js/Navigation-bar.js"></script>
+  </body>
 </html>

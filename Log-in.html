@@ -1,158 +1,137 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=divice-width, initial-scale=1.0">
-  
-  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-
-  <!-- Link a css ----–----------- -->
-  <link rel="stylesheet" href= "css/Style.css" type="text/css" media="all" />
-  <link rel="stylesheet" href= "css/Navigation-bar.css" type="text/css" media="all">
-  <link rel="stylesheet" href= "css/Log-in.css" type="text/css" media="all">
-  <link rel="stylesheet" href= "css/footer.css" type="text/css" media="all">
-
-  <title> Project 1</title>
-</head>
-
-<body>
-  <!-- Navigation bar--------------------- -->
-  <header>
-    <div id="top">
-      <div id="logo">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico" />
+    <!-- Link a css ----–----------- -->
+    <link rel="stylesheet" href="css/Style.css" type="text/css" />
+    <link rel="stylesheet" href="css/Navigation-bar.css" type="text/css" />
+    <link rel="stylesheet" href="css/Log-in.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <title>Project 1 | Log In</title>
+  </head>
+  <body>
+    <!-- Navigation bar--------------------- -->
+    <header id="top">
+      <h1 id="logo">
         <span>Project 1</span>
-      </div>
-
-      <div class="navigation">
+      </h1>
+      <nav class="navigation">
         <ul>
           <li class="list">
-            <a href= "index.html">
+            <a href="index.html">
               <span class="icon">
-                <img src= "icons/icons8-home-99999999.png">
+                <img src="icons/home.ico" />
               </span>
               <span class="nav-text">Home</span>
             </a>
           </li>
           <li class="list">
-            <a href= "song.html">
+            <a href="song.html">
               <span class="icon">
-                <img src= "icons/icons8-music-player-100.png">
+                <img src="icons/music.ico" />
               </span>
               <span class="nav-text">Song</span>
             </a>
           </li>
           <li class="list">
-            <a href= "content.html">
+            <a href="content.html">
               <span class="icon">
-                <img src="icons/icons8-contact-us-100.png">
+                <img src="icons/contact.ico" />
               </span>
               <span class="nav-text">Contact</span>
             </a>
           </li>
           <li class="list active">
-            <a href= "Log-in.html">
+            <a href="Log-in.html">
               <span class="icon">
-                <img src= "icons/icons8-log-in-100.png">
+                <img src="icons/log in.ico" />
               </span>
               <span class="nav-text">Log in</span>
             </a>
           </li>
           <div class="indicator"><span></span></div>
         </ul>
-      </div>
-    </div>
-  </header>
-  <!-- End navigation bar --------------- -->
-  <main>
-    <div id="bg-login">
-      <h2 class="login-logo" >Log In</h2>
-      <form id="login-form" action="#">
-        <i class="fa fa-user login-icon"></i>
-        <input class="login" type="text" placeholder="Username" required>
-        <i class="fa fa-key login-icon"></i>
-        <input class="login" type="Password" placeholder="Enter Your Password" required>
-        <input class="login-btn" type="submit" value="Get Started">
-      </form>
-      <div class="login-bottom">
-        <div> <a class="bottom-line" href= "create_account.html">Create Account</a></div>
-        <a class="bottom-line" href= "forget_Password.html">Forget Password</a>
-      </div>
-    </div>
-  </main>
-     <!-- footer --------------------------------------------------- -->
-     <footer>
+      </nav>
+    </header>
+    <!-- End navigation bar --------------- -->
+    <main>
+      <section id="bg-login">
+        <h2 class="login-logo">Log In</h2>
+        <form id="login-form" action="#">
+          <i class="fa fa-user login-icon"></i>
+          <input class="login" type="text" placeholder="Username" required />
+          <i class="fa fa-key login-icon"></i>
+          <input
+            class="login"
+            type="Password"
+            placeholder="Enter Your Password"
+            required
+          />
+          <input class="login-btn" type="submit" value="Get Started" />
+        </form>
+        <sec class="login-bottom">
+          <a class="bottom-line" href="create_account.html">Create Account</a>
+          <a class="bottom-line" href="forget_Password.html">Forget Password</a>
+        </sec>
+      </section>
+    </main>
+    <!-- footer --------------------------------------------------- -->
+    <footer>
       <div class="row">
         <div class="col">
-          <h2 class="footer-logo" >Project 1</h2>
+          <h2 class="footer-logo">Project 1</h2>
           <p id="para">
-         Music is a Piece of Art that gores in the ear Stright to The Heart.
+            Music is a Piece of Art that gores in the ear Stright to The Heart.
           </p>
         </div>
         <div class="col">
-          <h3>Content us <div class="underline">
+          <h3>
+            Content us
+            <div class="underline">
               <span></span>
             </div>
           </h3>
-          <p>
-            vpo jatwar Ambala
-          </p>
-          <p>
-            Ambala city 134201
-          </p>
-          <p class="email-id">
-            example@gmail.com
-          </p>
+          <p>vpo jatwar Ambala</p>
+          <p>Ambala city 134201</p>
+          <p class="email-id">example@gmail.com</p>
           <h4>+91-0123456789</h4>
         </div>
         <div class="col">
-          <h3>COLORIB <div class="underline">
+          <h3>
+            COLORIB
+            <div class="underline">
               <span></span>
             </div>
           </h3>
-          <p id="copyright">
-            &copy; 2022
-          </p>
+          <p id="copyright">&copy; 2022</p>
         </div>
         <div class="col">
-          <h3>Newsletter <div class="underline">
+          <h3>
+            Follow Me
+            <div class="underline">
               <span></span>
             </div>
           </h3>
-          <form id="footer-form" action="#">
-            <ion-icon name="mail"></ion-icon>
-            <input type="email" placeholder="Enter Your Email id" required>
-            <button type="submit" class="footer-btn">
-              <ion-icon name="arrow-forward"></ion-icon>
-            </button>
-          </form>
           <div class="social-icons">
-            <a href="https://www.facebook.com/atul22g" target="_blank"><i class="fa fa-facebook"></i></a>
-           <a href="https://www.instagram.com/atul_22g" target="_blank"><i class="fa fa-instagram"></i></a>
-           <a href="https://github.com/Atul22g" target="_blank"><i class="fa fa-github"></i></a>
-         </div>
+            <a href="https://www.facebook.com/atul22g" target="_blank"
+              ><img src="icons/facebook.ico"
+            /></a>
+            <a href="https://www.instagram.com/atul_22g" target="_blank"
+              ><img src="icons/instagram.ico"
+            /></a>
+            <a href="https://github.com/Atul22g" target="_blank"
+              ><img src="icons/git hub.ico"
+            /></a>
+          </div>
         </div>
       </div>
-  
-      <hr>
-      <p class="copyright">
-        Project 1 &copy; All Rights Reserved
-      </p>
+      <hr />
+      <p class="copyright">Project 1 &copy; All Rights Reserved</p>
     </footer>
-  
-
-
-  <!-- fontawesome logo ----–----------- -->
-  <script src="https://kit.fontawesome.com/6a20098ea0.js" crossorigin="anonymous"></script>
-
-  <!--  Link a js --------------------- -->
-  <script src= "js/Navigation-bar.js"></script>
-
-    <!-- ionicon ----------------------- -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
-</body>
-
+    <!--  Link a js --------------------- -->
+    <script src="js/Navigation-bar.js"></script>
+  </body>
 </html>
