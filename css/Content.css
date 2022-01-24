@@ -150,12 +150,8 @@
   }
 
   #c_a_heading {
-    text-transform: capitalize;
-    text-decoration: underline;
     margin-top: 3em;
     font-size: 2em;
-    font-weight: bolder;
-    font-weight: bolder;
   }
 }
 
