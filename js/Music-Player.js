@@ -1,6 +1,6 @@
 
-let btn = document.querySelectorAll('.song #play_btn');
-let song = document.querySelectorAll('#music');
+let btn = document.querySelectorAll('.song .play_btn');
+let song = document.querySelectorAll('.music');
 
 /*popup music player part*/
 let p_m_player = document.querySelector('.popup_music_player');
@@ -10,10 +10,10 @@ let current_singer_name = document.querySelector('#current_singer_name');
 let song_img = document.querySelector('.song_img');
 
 /*controlls part*/
-let play_pause_btn = document.querySelector('#play_pause_btn');
+let play_pause_btn = document.querySelector('.play_pause_btn');
 let slider = document.querySelector('#slider');
-let forward_btn = document.querySelector('#forward_btn');
-let backward_btn = document.querySelector('#backward_btn');
+let forward_btn = document.querySelector('.forward_btn');
+let backward_btn = document.querySelector('.backward_btn');
 
 /*songs duration*/
 let current_duration = document.querySelector('.controlls .progress_part #current_duration');

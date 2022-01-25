@@ -48,15 +48,15 @@ for (let i = 0; i < All_song.length; i++) {
 
   let Html = ` <div class="song">
       <div class="img">
-      <img src="${All_song[i].img} ">
+      <img src="${All_song[i].img}" alt="1">
       </div>
       <div class="more">
-      <audio src="${All_song[i].path}" id="music"></audio>
+      <audio src="${All_song[i].path}" class="music"></audio>
       <div class="song_info">
          <p id="title">${All_song[i].name}</p>
          <p>${All_song[i].singer}</p>
       </div>
-      <button id="play_btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+      <button class="play_btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
       </div>
     </div>`;
 

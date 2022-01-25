@@ -81,7 +81,7 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-.tracks .song #play_btn {
+.tracks .song .play_btn {
   height: 50px;
   width: 50px;
   border: none;
