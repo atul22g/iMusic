@@ -15,6 +15,10 @@ main {
   background: var(--clr);
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -24,7 +28,7 @@ body {
   --clr: #e9ecef;
 }
 
-@media(max-width: 280px) {
+@media(max-width: 300px) {
   body {
     display: none;
   }
