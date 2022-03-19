@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Literata:ital@1&family=Love+Light&family=Oooh+Baby&family=Open+Sans:ital@1&family=PT+Serif:ital@1&family=Playball&family=Playfair+Display:ital,wght@1,500&family=Pushster&family=Rasa:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Literata:ital@1&family=Love+Light&family=Oooh+Baby&family=Open+Sans:ital@1&family=PT+Serif:ital@1&family=Playball&family=Playfair+Display:ital,wght@1,500&family=Pushster&family=Rasa:ital@1&display=swap");
 
 *,
 *::after,
@@ -28,19 +28,75 @@ body {
   --clr: #e9ecef;
 }
 
-@media(max-width: 300px) {
+@media (max-width: 300px) {
   body {
     display: none;
   }
 }
 
-/* Loading */
-#loading{
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	background: #fff
-	url('../images/loading.gif')
-	 no-repeat center center;	
-	z-index: 99999;
+/* loading */
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00796b;
+  z-index: 10;
+}
+.center-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outer-ring {
+  width: 100px;
+  height: 100px;
+  border-top: 4px solid #bdbdbd;
+  border-bottom: 4px solid #bdbdbd;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  animation: rototering 2s linear infinite;
+}
+.middle-ring {
+  width: 80px;
+  height: 80px;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  animation: rototering 2s linear infinite reverse;
+}
+.inner-ring {
+  width: 60px;
+  height: 60px;
+  border-top: 4px solid #bdbdbd;
+  border-bottom: 4px solid #bdbdbd;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  animation: rototering 2s linear infinite;
+}
+.dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #b2dfdb;
+  position: absolute;
+  animation: rototering 2s linear infinite;
+}
+@keyframes rototering {
+  0% {
+    transform: rotate(0deg) scale(0.3);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.2);
+  }
 }
